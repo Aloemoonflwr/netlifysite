@@ -266,6 +266,112 @@
       - I may post finished commissions to my blog unless you request privacy</p>
   </div>
 
+<form name="commissions" method="POST" netlify>
+  <h2>Basic Info</h2>
+
+  <label>Name / Username*<br>
+    <input type="text" name="name" required>
+  </label><br><br>
+
+  <label>Preferred Contact Method*<br>
+    <select name="contact_method" required>
+      <option value="">Select one</option>
+      <option value="Tumblr">Tumblr</option>
+      <option value="Discord">Discord</option>
+      <option value="Email">Email</option>
+      <option value="Other">Other</option>
+    </select>
+  </label><br><br>
+
+  <label>If you chose 'Other', please specify:<br>
+    <input type="text" name="contact_method_other">
+  </label><br><br>
+
+  <label>Contact Information*<br>
+    <input type="text" name="contact_info" required>
+  </label><br><br>
+
+  <h2>Commission Type</h2>
+
+  <label>What would you like to order?*<br>
+    <select name="commission_type" required>
+      <option value="">Select one</option>
+      <option value="RP Icon Pack">RP Icon Pack (10, 20, or 30)</option>
+      <option value="Promo Banner">Promo Banner</option>
+      <option value="Blog Pack">Blog Pack (Icons + Promo)</option>
+      <option value="Social Media Profile Pack">Social Media Profile Pack</option>
+      <option value="Profile Picture Edit">Profile Picture Edit</option>
+      <option value="Twitch Overlay">Twitch Overlay</option>
+      <option value="Twitch Panels">Twitch Panels</option>
+      <option value="Streaming Pack">Streaming Pack</option>
+      <option value="Collage Art">Collage Art</option>
+      <option value="Other">Other (please specify)</option>
+    </select>
+  </label><br><br>
+
+  <label>If you chose 'Other', please specify:<br>
+    <input type="text" name="commission_other">
+  </label><br><br>
+
+  <label>If ordering an icon pack, how many icons?<br>
+    <select name="icon_pack_size">
+      <option value="">Select one</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+    </select>
+  </label><br><br>
+
+  <label>If ordering a streaming pack, what kind?<br>
+    <select name="streaming_pack">
+      <option value="">Select one</option>
+      <option value="Basic">Basic Streaming Pack</option>
+      <option value="Expanded">Expanded Streaming Pack</option>
+      <option value="Full">Full Streaming Pack</option>
+    </select>
+  </label><br><br>
+
+  <label>Dimensions (for banners, collage art, etc.):<br>
+    <input type="text" name="dimensions">
+  </label><br><br>
+
+  <h2>Customization</h2>
+
+  <label>Do you have a face claim or specific images to use?*<br>
+    <textarea name="image_references" required placeholder="Links or Pinterest boards here!" rows="3"></textarea>
+  </label><br><br>
+
+  <label>What colors/aesthetic should be used?*<br>
+    <textarea name="color_theme" required rows="2"></textarea>
+  </label><br><br>
+
+  <label>Any additional customization details?<br>
+    <textarea name="additional_details" rows="3"></textarea>
+  </label><br><br>
+
+  <h2>Payment & Final Notes</h2>
+
+  <label>How do you plan to pay?*<br>
+    <select name="payment_method" required>
+      <option value="">Select one</option>
+      <option value="Ko-fi">Ko-fi</option>
+      <option value="Paypal/Cashapp">Paypal / Cashapp</option>
+      <option value="Other">Other (please specify)</option>
+    </select>
+  </label><br><br>
+
+  <label>If 'Other', please specify:<br>
+    <input type="text" name="payment_other">
+  </label><br><br>
+
+  <label>Any final requests or notes?<br>
+    <textarea name="final_notes" rows="3"></textarea>
+  </label><br><br>
+
+  <button type="submit" style="padding: 0.7rem 1.5rem; background-color: #a3c9a8; border: none; border-radius: 8px; font-weight: bold;">Send Request</button>
+</form>
+
+  
   <script>
     // Floating particles
     for (let i = 0; i < 25; i++) {
