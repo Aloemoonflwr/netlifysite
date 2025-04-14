@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Commissions | AloeMoonflwr</title>
+  <link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/custom-icon-design/lovely-weather-2/512/Moon-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=1748&auto=format&fit=crop') no-repeat center center fixed;
+    background-size: cover;
+    color: #2f3c2f;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur805.cur'), auto;
+  }
+
+  header {
+    background-color: rgba(207, 232, 212, 0.85);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-top: 3px solid #a3c9a8;
+    border-bottom: 3px solid #a3c9a8;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #2f3c2f;
+  }
+
+  h2 {
+    color: #5e8c61;
+  }
+
+  a {
+    color: #5e8c61;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px dashed #a3c9a8;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .back-home {
+    display: inline-block;
+    background-color: #d9f0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    font-weight: bold;
+  }
+
+  .back-home:hover {
+    background-color: #b3dcbf;
+  }
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: 900px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  }
+
+  #theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #d9f0e0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* --- DARK MODE FIXES --- */
+  body.dark-mode {
+    background-color: #0e0e0e;
+    color: #e0e0e0;
+  }
+
+  body.dark-mode header {
+    background-color: rgba(30, 30, 30, 0.85) !important;
+    border-top: 3px solid #444 !important;
+    border-bottom: 3px solid #444 !important;
+  }
+
+  body.dark-mode header h1,
+  body.dark-mode h2,
+  body.dark-mode p,
+  body.dark-mode a,
+  body.dark-mode li,
+  body.dark-mode iframe {
+    color: #e0e0e0 !important;
+  }
+
+  body.dark-mode .section {
+    background-color: rgba(30, 30, 30, 0.85) !important;
+    border: 2px dashed #444 !important;
+    color: #e0e0e0 !important;
+  }
+
+  body.dark-mode a {
+    color: #a5d6a7 !important;
+  }
+
+  body.dark-mode #theme-toggle {
+    background-color: #444 !important;
+    color: #e0e0e0 !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+
+  .particle {
+    position: absolute;
+    background-color: rgba(255, 255, 200, 0.5);
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    animation: float 12s linear infinite;
+    pointer-events: none;
+    box-shadow: 0 0 6px rgba(255, 255, 200, 0.8);
+  }
+
+  @keyframes float {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 0.8; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0.2; }
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Moss & Moonlight</h1>
+    <p>Dreamy collage art & cozy vibes ✿</p>
+  </header>
+
+  <button id="theme-toggle">🌙</button>
+
+  <a class="back-home" href="index.html">← Back to Home</a>
+
+  <div class="section">
+    <h2>🐸 Full Commissions Menu</h2>
+    <p>Thank you for your interest in my work! Below you'll find all pricing, service descriptions, and my terms. Please be sure to read through before submitting a request 💌</p>
+  </div>
+
+  <div class="section">
+    <h2>💸 Pricing</h2>
+    <p><strong>Icon Packs:</strong><br>
+    10 Icons – $5<br>
+    20 Icons – $10<br>
+    30 Icons – $15</p>
+
+    <p><strong>Promo Banners:</strong><br>
+    $5</p>
+
+    <p><strong>Blog Packs (Icons + 1 Promo):</strong><br>
+    10 Icons + 1 Promo – $10<br>
+    20 Icons + 1 Promo – $20<br>
+    30 Icons + 1 Promo – $25</p>
+
+    <p><strong>Social Media Profile Packs:</strong><br>
+    Includes 1 profile picture and 1 banner – $8</p>
+
+    <p><strong>Profile Picture Edits:</strong><br>
+    Single PFP edit – $3</p>
+  </div>
+
+  <div class="section">
+    <h2>➕ Add-Ons</h2>
+    <p><strong>Additional Characters:</strong><br>
+    Applies to icon packs and promos – $5</p>
+
+    <p><strong>Additional Items:</strong><br>
+    (e.g., adding GIFs or animation) – $3</p>
+
+    <p><strong>Additional Promos/Banners:</strong><br>
+    $3 each</p>
+
+    <p><strong>Extra Icons:</strong><br>
+    1 – $1 • 5 – $2 • 10 – $5 • 15 – $7 • 20 – $10<br>
+    (Max 20 additional icons per order)</p>
+  </div>
+  <div class="section">
+    <h2>🎮 Twitch Overlays & Panels</h2>
+    <p><strong>Static Twitch Overlay:</strong> $15<br>
+    <strong>Panel Set (5):</strong> $10</p>
+
+    <p><strong>Add-Ons:</strong><br>
+    Additional Overlays – $5 each<br>
+    1 Extra Panel – $2 • 5 Extra Panels – $5</p>
+  </div>
+
+  <div class="section">
+    <h2>🌕 Streaming Packs</h2>
+    <p>Each pack includes overlays, panels, profile pic edits, and banners. I currently only offer static graphics (no 3D or animated overlays).</p>
+    <ul>
+      <li><strong>Basic Streaming Pack</strong> – $25<br>2 overlays, 5 panels, PFP edit, banner</li>
+      <li><strong>Expanded Streaming Pack</strong> – $30<br>5 overlays, 10 panels, PFP edit, banner</li>
+      <li><strong>Full Custom Pack</strong> – Contact for pricing</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🌸 Collage Art</h2>
+    <p><strong>Simple Collage:</strong> $8<br>
+    A soft and dreamy collage piece with vintage elements. Great for personal inspiration or blog decoration.</p>
+
+    <p><strong>Complex Collage:</strong> $12<br>
+    Heavily layered or themed, these use more textures and techniques. Great for storytelling or gifts!</p>
+  </div>
+
+  <div class="section">
+    <h2>📜 Terms and Conditions</h2>
+    <p><strong>Turnaround Time:</strong><br>
+    Standard turnaround time varies between 1–3 weeks depending on project size. Small projects (e.g., profile pics, icons, panels) are usually completed within 2–7 days. Large projects (e.g., streaming packs, 20+ icon sets) may take longer. I’ll always notify you if there’s a delay.</p>
+
+    <p><strong>Deadlines & Rush Orders:</strong><br>
+    If you have a hard deadline, please let me know ahead of time. I’ll do my best to accommodate it! Rush orders may include an additional fee depending on size and urgency.</p>
+
+    <p><strong>Communication:</strong><br>
+    - I will confirm your commission via email or message after submission.<br>
+    - If I do not hear back from you within 48 hours, I may remove you from my queue.<br>
+    - If you ghost after confirmation, I reserve the right to cancel the commission.<br>
+    - You’ll receive updates during key stages (initial draft, preview, final).</p>
+
+    <p><strong>Revisions:</strong><br>
+    - 1–2 small revisions are included in all commissions (e.g., color tweaks, slight repositioning)<br>
+    - Major revisions (e.g., complete style/layout changes) may include a small fee<br>
+    - After final approval, no further changes will be made unless it was my error</p>
+
+    <p><strong>Payment:</strong><br>
+    - Full payment is required upfront once pricing and details are confirmed<br>
+    - Payment via <a href="https://ko-fi.com/aloemoonflwr" target="_blank">Ko-fi</a> (custom request option) is preferred<br>
+    - Payment plans are available for larger orders — just ask!</p>
+
+    <p><strong>Usage and Credit:</strong><br>
+    - My work is for personal use only unless we’ve agreed otherwise<br>
+    - Do not resell, redistribute, or claim as your own<br>
+    - Please credit me when sharing your commissioned work:<br>
+      Tumblr: <a href="https://aloemoonflwr.tumblr.com">@aloemoonflwr</a><br>
+      Twitter: <a href="https://twitter.com/aloemoonflwr">@aloemoonflwr</a><br>
+      - I may post finished commissions to my blog unless you request privacy</p>
+  </div>
+
+  <script>
+    // Floating particles
+    for (let i = 0; i < 25; i++) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      particle.style.left = `${Math.random() * 100}%`;
+      particle.style.top = `${Math.random() * 100}%`;
+      particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
+      document.body.appendChild(particle);
+    }
+
+    // Theme toggle
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggle.textContent = document.body.classList.contains('dark-mode') ? '🌞' : '🌙';
+    });
+  </script>
+</body>
+</html>
