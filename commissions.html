@@ -382,6 +382,33 @@
     <button type="submit" style="padding: 0.7rem 1.5rem; background-color: #a3c9a8; border: none; border-radius: 8px; font-weight: bold;">Send Request</button>
   </form>
 </div>
+
+<p id="thank-you-msg" style="display: none; margin-top: 1rem; background-color: #d9f0e0; color: #2f3c2f; padding: 1rem; border-radius: 8px; border: 2px dashed #a3c9a8; text-align: center;">
+  🐸 Thank you for your request! I’ll reach out soon 💌
+</p>
+
+<script>
+  const form = document.forms['commissions'];
+  const thankYou = document.getElementById('thank-you-msg');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      form.style.display = 'none';
+      thankYou.style.display = 'block';
+    })
+    .catch(error => alert('There was an error submitting the form. Please try again later.'));
+  });
+</script>
+
   
   <script>
     // Floating particles
